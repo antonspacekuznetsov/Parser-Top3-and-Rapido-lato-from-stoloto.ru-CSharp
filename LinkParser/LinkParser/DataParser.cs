@@ -1,0 +1,94 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Text.RegularExpressions;
+namespace LinkParser
+{
+    class DataParser:IParser
+    {
+        private ISmtpSender _errorSend;
+        private NetRequest _net;
+        public DataParser(ISmtpSender sender, NetRequest net)
+        {
+            _errorSend = sender;
+            _net = net;
+        }
+        public void Parse(ref List<LinkInfo> parts, string link)
+        {
+            Match m;
+            int code;
+            string backlnk, responseFromServer = _net.GetHtmlCode(link), pattern = "(?:href|src)\\s*=\\s*(?:[\"'](?<1>[^\"']*)[\"']|(?<1>\\S+))";
+            if (responseFromServer == "")
+                return;
+            try
+            {
+                m = Regex.Match(responseFromServer, pattern, RegexOptions.IgnoreCase | RegexOptions.Compiled, TimeSpan.FromSeconds(1));
+                while (m.Success)
+                {
+                    backlnk = Cheker(link, m.Groups[1].ToString());
+                    if (backlnk != "")
+                    {
+                        code = _net.GetStatusCode(backlnk);
+                        parts.Add(new LinkInfo() {Url=backlnk, Code=code});
+                        DisplayInfo.ShowLink(backlnk, code, parts.Count);
+                        }
+                    m = m.NextMatch();
+                }
+            }
+            catch (RegexMatchTimeoutException e)
+            {
+                _errorSend.SendMail(e.Message);
+                DisplayInfo.ShowInfo("The matching operation timed out.");
+            }
+
+            catch (ArgumentNullException e)
+            {
+                _errorSend.SendMail(e.Message);
+                DisplayInfo.ShowInfo(e.Message.ToString());
+            }
+
+        }
+
+        //функция очистки ссылки от параметров, страниц и т.д. in=> http://google.ru/main.php?t=5 out=> http://google.ru
+        //returned cleared link
+        private string Clearlink(string _link)
+        {
+            string goodlink = "";
+            int t = 0;
+            for (int i = 0; i < _link.Length; i++)
+            {
+                if (_link[i] == '/')
+                    t++;
+                if (t >= 3)
+                    break;
+                goodlink += _link[i];
+            }
+
+            return goodlink;
+        }
+
+        private string Cheker(string _link, string foundlnk)
+        {
+            string goodLnk = foundlnk;
+            _link = Clearlink(_link);
+
+            if (!Regex.IsMatch(foundlnk, ("^http.*")))
+            {
+                if (Regex.IsMatch(foundlnk, ("^mailto.*")))
+                    return goodLnk = "";
+                if (Regex.IsMatch(foundlnk, ("^//.*")))
+                    goodLnk = "http:" + foundlnk;
+                else
+                {
+                    if (!Regex.IsMatch(foundlnk, ("^/.*")))
+                        goodLnk = _link + "/" + foundlnk;
+                    else
+                        goodLnk = _link + foundlnk;
+                }
+            }
+            return goodLnk;
+        }
+    }
+}

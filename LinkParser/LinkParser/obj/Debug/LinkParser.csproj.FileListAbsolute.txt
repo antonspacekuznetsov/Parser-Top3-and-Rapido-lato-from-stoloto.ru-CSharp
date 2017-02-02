@@ -1,0 +1,37 @@
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\bin\Debug\LinkParser.exe.config
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\bin\Debug\LinkParser.exe
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\bin\Debug\LinkParser.pdb
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\obj\Debug\LinkParser.csprojResolveAssemblyReference.cache
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\obj\Debug\LinkParser.exe
+c:\users\administrator\documents\visual studio 2012\Projects\LinkParser\LinkParser\obj\Debug\LinkParser.pdb
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\bin\Debug\LinkParser.exe.config
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\obj\Debug\LinkParser.exe
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\obj\Debug\LinkParser.pdb
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\bin\Debug\LinkParser.exe
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\bin\Debug\LinkParser.pdb
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\obj\Debug\LinkParser.csprojResolveAssemblyReference.cache
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Anton\Downloads\LinkParser (3)\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.xml
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\bin\Debug\LinkParser.exe.config
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.exe
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.pdb
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\bin\Debug\LinkParser.exe
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\bin\Debug\LinkParser.pdb
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.dll
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.xml
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.csprojResolveAssemblyReference.cache
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.MainForm.resources
+C:\Users\WhoCarryBalckHat\Downloads\LinkParser\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.csproj.GenerateResource.Cache
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\bin\Debug\LinkParser.exe.config
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.exe
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.pdb
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\bin\Debug\LinkParser.exe
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\bin\Debug\LinkParser.pdb
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.csprojResolveAssemblyReference.cache
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.MainForm.resources
+C:\Users\Anton\Desktop\LinkParser\LinkParser\LinkParser\obj\Debug\LinkParser.csproj.GenerateResource.Cache
